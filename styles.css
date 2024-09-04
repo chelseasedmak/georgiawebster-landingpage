@@ -132,7 +132,7 @@ a:hover {
 
 /*Tour Section*/
 
-#tour-bg {
+#tour-section {
     background-image: url(assets/flower-bg-1.png);
     display: flex;
     flex-direction: column;
