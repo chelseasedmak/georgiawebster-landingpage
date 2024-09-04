@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #EEEAE1;
+    font-family: "Reddit Mono", monospace;
+    font-weight: 300;
+}
+
+/* Navigation */
+#nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 8px;
+    background-color: #EEEAE195;
+    width: 100%;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.nav-socials {
+    padding-left: 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 44px;
+}
+
+.georgia-logo {
+    padding-left: 188px;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    list-style-type: none;
+    align-items: center;
+}
+
+li {
+    padding: 8px;
+    padding-right: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    font-style: italic;
+}
+
+
+
+.nav-subscribe {
+    display: flex;
+    flex-direction: row;
+    padding: 8px 14px 8px 14px;
+    border-radius: 99px;
+    border: 1px solid #5B274A;
+    color: #5B274A;
+    font-family: "Reddit Mono", monospace;
+    font-size: 0.875em;
+    font-weight: 300;
+    margin-right: 0px;
+    background-color: #5B274A15;
+
+}
+
+.nav-subscribe:hover {
+    font-style: italic;
+}
+
+@media screen and (max-width: 1200px) {
+    #nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .georgia-logo {
+        padding-left: 0px;
+        padding-top: 24px;
+    }
+
+    .nav-socials {
+        padding-top: 24px;
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #nav {
+        font-size: 0.875em;
+        position: relative;
+        top: 0px;
+    }
+
+}
