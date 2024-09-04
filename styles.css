@@ -23,7 +23,7 @@ body {
     border-top: 1px solid black;
 }
 
-.nav-socials {
+.social-links {
     padding-left: 24px;
     display: flex;
     flex-direction: row;
@@ -55,8 +55,6 @@ a {
 a:hover {
     font-style: italic;
 }
-
-
 
 .nav-subscribe {
     display: flex;
@@ -90,9 +88,13 @@ a:hover {
         padding-top: 24px;
     }
 
-    .nav-socials {
+    .social-links {
         padding-top: 24px;
         padding-left: 0px;
+    }
+
+    .nav-subscribe {
+        background-color: #EEEAE1;
     }
 }
 
@@ -131,7 +133,7 @@ a:hover {
 /*Tour Section*/
 
 #tour-bg {
-    background-image: url(assets/flower-bg-1.jpg);
+    background-image: url(assets/flower-bg-1.png);
     display: flex;
     flex-direction: column;
     padding-top: 36px;
@@ -493,8 +495,7 @@ hr {
     border-top: 1px solid black;
     align-items: center;
     padding-top: 24px;
-    background-image: url(assets/flower-bg-1.jpg);
-
+    background-image: url(assets/flower-bg-2\ \(1\).jpg);
     gap: 16px;
 
 }
@@ -569,5 +570,58 @@ hr {
     .userInput {
         min-width: 236px;
 
+    }
+}
+
+/*Footer*/
+#footer {
+    padding-top: 88px;
+    padding-bottom: 88px;
+    border-top: 1px solid #000000;
+}
+
+.footer-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    gap: 64px;
+}
+
+.socials-copyright-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .social-links {
+    gap: 24px;
+    padding-left: 0px;
+}
+
+.copyright {
+    margin-top: 24px;
+    font-size: 0.75em;
+    width: 450px;
+    letter-spacing: 2px;
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+
+@media screen and (max-width: 600px) {
+    .footer-content-wrapper {
+        text-align: center;
+    }
+
+    .copright {
+        font-size: 0.75px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 375px;
     }
 }
