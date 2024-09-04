@@ -104,3 +104,180 @@ a:hover {
     }
 
 }
+
+/*Arrow*/
+#hero-image {
+    display: flex;
+    flex-direction: column;
+}
+
+.arrow-container {
+    display: inline-block;
+    align-content: center;
+    justify-items: center;
+    height: 136px;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+
+}
+
+@media screen and (max-width: 600px) {
+    .arrow-container {
+        height: 96px;
+    }
+
+}
+
+/*Tour Section*/
+
+#tour-bg {
+    background-image: url(assets/flower-bg-1.jpg);
+    display: flex;
+    flex-direction: column;
+    padding-top: 36px;
+}
+
+.tour-container {
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #F1EFE8;
+    padding: 24px 24px 24px 24px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    margin-top: 48px;
+    margin-bottom: 24px;
+}
+
+.tour-header-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 2px solid #8E8829;
+    margin-bottom: 16px;
+}
+
+.tour-header {
+    font-size: 3em;
+    font-weight: 300;
+    color: #3e3e3e;
+    font-family: "Whisper", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.tour-event-container {
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    border-bottom: 1px solid #8D882843;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tour-event-container-last {
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.tour-button {
+    border: 1px solid #5B274A;
+    border-radius: 99px;
+    color: #5B274A;
+    font-family: "Reddit Mono", monospace;
+    padding: 8px 24px 8px 24px;
+    font-size: 0.875empx;
+}
+
+.tour-button:hover {
+    box-shadow: 0px 0px 10px 2px #B671B440;
+    font-style: italic;
+}
+
+.date {
+    font-size: 1.125em;
+    font-weight: 400;
+}
+
+.city {
+    font-weight: 400px;
+    letter-spacing: 1px;
+}
+
+
+.all-td {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.all-tour-button {
+    border: 1px solid #5B274A;
+    border-radius: 99px;
+    color: #5B274A;
+    font-family: "Reddit Mono", monospace;
+    padding: 8px 24px 8px 24px;
+    font-size: 0.875em;
+    margin-bottom: 56px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.all-tour-button:hover {
+    box-shadow: 0px 0px 10px 2px #B671B440;
+    font-style: italic;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .tour-event-container,
+    .tour-event-container-last {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .tour-header-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .tour-event-container,
+    .tour-event-container-last {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .tour-header-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
