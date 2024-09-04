@@ -281,3 +281,167 @@ a:hover {
         align-items: center;
     }
 }
+
+/*Music Section*/
+#music-section {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+
+.music-content-wrapper {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.album-container {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    align-items: center;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.music-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+}
+
+.music-subtitle {
+    font-size: 1em;
+    color: #5B274A;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-bottom: 10px;
+
+}
+
+.album-title {
+    font-weight: 300;
+    font-size: 1.3em;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.play-button {
+    border: 1px solid #5B274A;
+    border-radius: 99px;
+    color: #5B274A;
+    font-family: "Reddit Mono", monospace;
+    padding: 8px 24px 8px 24px;
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    font-weight: 400;
+    background-color: #EEEAE1;
+}
+
+.play-button:hover {
+    box-shadow: 0px 0px 10px 2px #C359AB30;
+    font-style: italic;
+}
+
+@media screen and (max-width: 600px) {
+    .music-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .arrow-svg-left,
+    .arrow-svg-right {
+        display: none;
+    }
+
+}
+
+/*Merch Section*/
+#merch-section {
+    background-image: url(assets/merch-bg.png);
+    background-image: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 686px;
+    border-bottom: 1px solid #000000;
+}
+
+.merch-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+    gap: 24px;
+    font-family: "Whisper", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+}
+
+.merch-header-text {
+    font-size: 2.25em;
+    margin-bottom: 24px;
+}
+
+.merch-content-wrapper {
+    padding: 24px;
+    background-color: #F5F3EB;
+    border: 1px solid black;
+    border-radius: 2px;
+
+}
+
+hr {
+    color: #8E8829;
+    border-top: 1px solid #000000;
+    border-left: none;
+}
+
+.merch-title {
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 1.25em;
+    font-weight: 400;
+    color: #000000;
+}
+
+.merch-button {
+    border: 1px solid #5B274A50;
+    border-radius: 99px;
+    color: white;
+    font-family: "Reddit Mono", monospace;
+    padding: 8px 24px 8px 24px;
+    font-size: 0.875em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    font-weight: 300;
+    background-color: #BEA9B1;
+}
+
+.merch-button:hover {
+    font-style: italic;
+
+}
+
+.merch-text-wrapper {
+    padding: 0px 24px 8px 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
