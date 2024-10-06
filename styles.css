@@ -150,6 +150,11 @@ a:hover {
     margin-bottom: 24px;
 }
 
+.tourContainer {
+    display: flex;
+    flex-direction: row;
+}
+
 .tour-header-wrapper {
     display: flex;
     flex-direction: row;

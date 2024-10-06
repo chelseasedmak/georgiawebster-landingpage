@@ -43,55 +43,47 @@
         <img src="assets/arrow-down.svg" alt="Arrow Down">
     </div>
     <section id="tour-section">
-        <div class="tour-container">
+        <div class="tour-container" id="tour-container">
             <div class="tour-header-wrapper">
                 <div class="tour-header">
                     <em> Tour </em>
                 </div>
             </div>
-            <!-- Tour placeholders - JS Coming soon -->
-            <div class="tour-event-container">
-                <div class="date"> JUL 19 </div>
-                <div class="location"> Wells Fargo Center </div>
-                <div class="city"> Cleveland, OH </div>
-                <button class="tour-button"> Get Tickets </button>
-            </div>
-            <div class="tour-event-container">
-                <div class="date"> JUL 19 </div>
-                <div location="location"> Wells Fargo Center </div>
-                <div class="city"> Cleveland, OH </div>
-                <button class="tour-button"> Get Tickets </button>
-            </div>
-            <div class="tour-event-container">
-                <div class="date"> JUL 19 </div>
-                <div location="location"> Wells Fargo Center </div>
-                <div class="city"> Cleveland, OH </div>
-                <button class="tour-button"> Get Tickets </button>
-            </div>
-            <div class="tour-event-container">
-                <div class="date"> JUL 19 </div>
-                <div location="location"> Wells Fargo Center </div>
-                <div class="city"> Cleveland, OH </div>
-                <button class="tour-button"> Get Tickets </button>
-            </div>
-            <div class="tour-event-container">
-                <div class="date"> JUL 19 </div>
-                <div location="location"> Wells Fargo Center </div>
-                <div class="city"> Cleveland, OH </div>
-                <button class="tour-button"> Get Tickets </button>
-            </div>
-            <div class="tour-event-container-last">
-                <div class="date"> JUL 19 </div>
-                <div loaction="location"> Wells Fargo Center </div>
-                <div class="city"> Cleveland, OH </div>
-                <button class="tour-button"> Get Tickets </button>
-            </div>
+            <!-- Javascript for tour  -->
         </div>
-        <div class=all-td>
+        <div class="all-td">
             <button class="all-tour-button">
-                <div class="tb-text"> View All Tour Dates </div> <img src="assets/fwd-arrow.svg" alt="Arrow Forward">
+                <div class="tb-text"> View All Tour Dates </div>
+                <img src="assets/fwd-arrow.svg" alt="Arrow Forward">
             </button>
         </div>
+
+        <script>
+            const tours = [
+                { date: "JUL 19", event: "Wells Fargo Center", location: "Cleveland, OH" },
+                { date: "JUL 20", event: "Madison Square Garden", location: "New York, NY" },
+                { date: "JUL 21", event: "United Center", location: "Chicago, IL" },
+                { date: "JUL 22", event: "Staples Center", location: "Los Angeles, CA" },
+                { date: "JUL 23", event: "TD Garden", location: "Boston, MA" },
+                { date: "JUL 24", event: "United Center", location: "Chicago, IL" },
+            ];
+
+            const tourContainer = document.getElementById('tour-container');
+
+            tours.forEach(tour => {
+                const tourInfo = document.createElement('div');
+                tourInfo.className = tours[tours.length - 1] === tour ? 'tour-event-container-last' : 'tour-event-container';
+
+                tourInfo.innerHTML = `
+                    <div class="date">${tour.date}</div>
+                    <div class="event">${tour.event}</div>
+                    <div class="location">${tour.location}</div>
+                    <button class="tour-button">Get Tickets</button>
+                `;
+
+                tourContainer.appendChild(tourInfo);
+            });
+        </script>
     </section>
     <section id="music-section">
         <div class="music-content-wrapper">
