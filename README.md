@@ -1,1 +1,3 @@
 # georgiawebster-landingpage
+
+I created a landing page to showcase my HTML and CSS skills, inspired by a design I truly enjoyed. The project allowed me to translate my creativity into code, highlighting both my technical and design skills. Through this process, I explored various layout techniques and styling options, resulting in a visually appealing and functional page. I’m excited to share this project because reflects my passion for web development , interface design, and my commitment to continuous learning in the field.
